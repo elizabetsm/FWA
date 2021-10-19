@@ -1,0 +1,10 @@
+/Users/lizka/Desktop/School21/1Cinema/src/main/java/edu/school_21/cinema/servlets/SignInServlet.java
+/Users/lizka/Desktop/School21/1Cinema/src/main/java/edu/school_21/cinema/repositories/UpdatableBCrypt.java
+/Users/lizka/Desktop/School21/1Cinema/src/main/java/edu/school_21/cinema/config/SpringConfig.java
+/Users/lizka/Desktop/School21/1Cinema/src/main/java/edu/school_21/cinema/services/ServletContextFactory.java
+/Users/lizka/Desktop/School21/1Cinema/src/main/java/edu/school_21/cinema/models/User.java
+/Users/lizka/Desktop/School21/1Cinema/src/main/java/edu/school_21/cinema/listeners/MyListener.java
+/Users/lizka/Desktop/School21/1Cinema/src/main/java/edu/school_21/cinema/repositories/UserDAO.java
+/Users/lizka/Desktop/School21/1Cinema/src/main/java/edu/school_21/cinema/servlets/SignUpServlet.java
+/Users/lizka/Desktop/School21/1Cinema/src/main/java/edu/school_21/cinema/servlets/SuccLogInServlet.java
+/Users/lizka/Desktop/School21/1Cinema/src/main/java/edu/school_21/cinema/repositories/UserMapper.java
