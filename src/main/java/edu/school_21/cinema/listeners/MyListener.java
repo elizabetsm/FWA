@@ -23,6 +23,6 @@ public class MyListener implements ServletContextListener {
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {
-        sce.getServletContext().setAttribute("userDAO", new UserDAO(SpringConfig.jdbcTemplate()));
+        sce.getServletContext().setAttribute("userDAO", UserDAO.getInstance(SpringConfig.jdbcTemplate()));
     }
 }

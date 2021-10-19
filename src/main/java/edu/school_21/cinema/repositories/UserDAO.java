@@ -10,13 +10,25 @@ import org.springframework.stereotype.Component;
 public class UserDAO {
 
     private final JdbcTemplate jdbcTemplate;
+    private static UserDAO INSTANCE;
 
 //    public UserDAO(){}
-
-    @Autowired
-    public UserDAO(JdbcTemplate jdbcTemplate) {
+    private UserDAO(JdbcTemplate jdbcTemplate){
         this.jdbcTemplate = jdbcTemplate;
     }
+
+    public static UserDAO getInstance(JdbcTemplate jdbcTemplate){
+        if ( INSTANCE == null){
+            INSTANCE = new UserDAO(jdbcTemplate);
+        }
+        return INSTANCE;
+    }
+
+
+//    @Autowired
+//    public UserDAO(JdbcTemplate jdbcTemplate) {
+//        this.jdbcTemplate = jdbcTemplate;
+//    }
 
     public void createUser(String firstname, String lastname, String phoneNum, String pass){
         jdbcTemplate.update("insert into users(first_name, last_name, phone_number, password)" +
